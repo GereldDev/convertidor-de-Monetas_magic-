@@ -27,7 +27,7 @@ function moneda(){
 
             mensajeHTML  = this.mensaje[2]
 
-        }else if ( monto > 1000){
+        }else if ( monto > 5000){
 
             mensajeHTML  = this.mensaje[1]
 
@@ -52,11 +52,30 @@ var yen = new moneda()
     yen.nombre = "Yenes"
     yen.tipoDeCambio = 99.5
 
+var quetzal = new moneda()
+    quetzal.nombre = "Quetzal"
+    quetzal.tipoDeCambio = 7.86
+
+var cordobas = new moneda()
+    cordobas.nombre = "cordobas"
+    cordobas.tipoDeCambio = 35
 
 function convertirMoneda(tipoDeMoneda){
 
+var montoSeleccionado = document.getElementById('monto').value
+    
 
-    var montoSeleccionado = document.getElementById('monto').value
-    yen.convertir(montoSeleccionado) 
+    if (tipoDeMoneda == "Yenes"){
+
+        yen.convertir(montoSeleccionado) 
+
+
+    }else if(tipoDeMoneda == "Quetzal"){
+        quetzal.convertir(montoSeleccionado) 
+    }else if(tipoDeMoneda == "cordobas"){
+        cordobas.convertir(montoSeleccionado)    
+    }else{
+        document.write("no es un numero")
+    }
 }
 

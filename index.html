@@ -9,7 +9,7 @@
     </head>
 <body>
     
-    <h1>Convertidor de Monedas</h1>
+    <h1>Convertidor de Monedas Internacionales</h1>
     
     <div class="contenidos">
         
@@ -17,8 +17,16 @@
         <input id="monto" type="number" placeholder="Monto en Dólares">
         
         
-        <button onclick="convertirMoneda()">
+        <button onclick="convertirMoneda('Yenes')">
             Convertir a Yenes
+        </button>
+
+        <button onclick="convertirMoneda('Quetzal')">
+            Convertir a Quetzales
+        </button>
+
+        <button onclick="convertirMoneda('cordobas')">
+            Convertir a Cordobas
         </button>
         
         
@@ -26,8 +34,16 @@
             
     </div>
 
+
+
     <div id="resultadoDelCambio">
 
+    </div>
+
+    <div class="musica">
+
+        <h4>Relajate</h4>
+        <audio src="pegasus.mp3.mpeg"  type="mpeg"  controls>musicas</audio>
     </div>
     
     
