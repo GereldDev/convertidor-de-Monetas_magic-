@@ -33,7 +33,7 @@ function moneda(){
 
         }else{
 
-            mensajeHTML = monto + " dolares son " + conversionResultado + " " + this.nombre
+            mensajeHTML = monto + " padal elfico son " + conversionResultado + " " + this.nombre
 
 
         }
@@ -49,15 +49,15 @@ function moneda(){
 }
 
 var yen = new moneda()
-    yen.nombre = "Yenes"
+    yen.nombre = "Padal"
     yen.tipoDeCambio = 99.5
 
 var quetzal = new moneda()
-    quetzal.nombre = "Quetzal"
+    quetzal.nombre = "potion"
     quetzal.tipoDeCambio = 7.86
 
 var cordobas = new moneda()
-    cordobas.nombre = "cordobas"
+    cordobas.nombre = "orgerMoney"
     cordobas.tipoDeCambio = 35
 
 function convertirMoneda(tipoDeMoneda){

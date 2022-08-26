@@ -12,6 +12,26 @@ h1{
     padding: 10px;
     color:#f87d02c2;
 }
+h1:hover{
+
+    background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 250px 250px, 250px 250px, 150px 100px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+h1:active{
+    text-shadow: 0 0 5px red, 0 0 15px orange, 0 0 30px orange, 0 0 50px black;;
+}
 
 h4{
     padding: 10px;
@@ -52,4 +72,25 @@ button{
     border-radius: 10px;
     color:#fff;
     text-align:center;   
+}
+
+.musica{
+text-align: center;
+position: block;
+bottom: 0;
+right: 0;
+width: 300px;
+border: 3px solid #9a2adb;
+}
+
+.footer{
+    font-size: 45px;
+    text-decoration-color: aliceblue;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    border: 3px solid red;
+    padding: auto;
+    -moz-text-decoration-color: aliceblue;
 }
